@@ -12,7 +12,7 @@ export default function Home() {
             <h2 >Hello, I'm</h2>
             <h1>Eugene Park</h1>
             <h2>It may not be pretty</h2>
-            <h2>   but it works..</h2>
+            <h2>but it works..</h2>
         </div>
         <ul>
             <li>
