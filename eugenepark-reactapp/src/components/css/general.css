@@ -8,7 +8,36 @@
     --headerSpacing: 2.5%;
 }
 
+.mainBody {
+    background-color: var(--dark);
+}
 
+div img {
+    /* profile picture style */
+    height: 25vh;
+    width: 25vh;
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 100%;
+    padding: 10pt;
+}
+
+.aboutMe {
+    margin-top: 10vh;
+}
+
+h1 {
+    font-family: 'Roboto Serif', serif;
+    font-weight: 600;
+}
+
+p {
+    font-family: 'Roboto Serif', serif;
+}
+
+a {
+    font-family: 'Roboto Serif', serif;
+}
 
 /* Header Styling */
 header {
@@ -20,7 +49,7 @@ header {
     justify-content: center;
     align-items: center;
     margin-bottom: var(--spaceBetween);
-    background-color: var(--dark);
+    /* background-color: var(--dark); */
 }
 
 header div img {
@@ -33,14 +62,8 @@ header div img {
 }
 
 .intro {
-    /* this moves the intro statement up and down
-    independent of the nav bar and pic*/
-    display: flex;
-    flex-direction: column;
-    padding-top: 1.5vh;
     padding: 10pt;
     margin-right: 5%;
-    /* animation: slideIn .8s ease-in-out  forwards 1s; */
 }
 
 header h1 {

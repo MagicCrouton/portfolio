@@ -1,5 +1,4 @@
 import React from 'react';
-import '../css/homePage.css';
 import profilePic from '../images/profilePic.jpg'
 
 export default function Home({handlePageChange}) {
