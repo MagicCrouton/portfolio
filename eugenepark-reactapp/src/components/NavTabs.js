@@ -1,5 +1,4 @@
 import React from 'react';
-import './css/navBar.css'
 
 // Here we are using object destructuring assignment to pluck off our variables from the props object
 // We assign them to their own variable names
@@ -41,6 +40,13 @@ function NavTabs({ currentPage, handlePageChange}) {
         onClick={() => handlePageChange('Contact')}
         className={currentPage === 'Contact' ? 'nav-link mx-2 active' : 'nav-link mx-2'}>
           Contact
+        </a>
+      </li>
+      <li class="nav-item">
+        <a aria-current="page" href="#resume"
+        onClick={() => handlePageChange('Resume')}
+        className={currentPage === 'Resume' ? 'nav-link mx-2 active' : 'nav-link mx-2'}>
+          Resume
         </a>
       </li>
     </ul>
