@@ -2,27 +2,26 @@ import React, { useState } from 'react';
 import NavTabs from './NavTabs';
 import Home from './pages/Home';
 import About from './pages/About';
-import Blog from './pages/Blog';
+import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('Home');
 
-  // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
+  // passed handPageChange to the homepage because it is used as a splash page and i wanted to hide the nav bar
+  const handlePageChange = (page) => setCurrentPage(page);
   const renderPage = () => {
     if (currentPage === 'Home') {
-      return <Home />;
+      return <Home handlePageChange={handlePageChange} />;
     }
     if (currentPage === 'About') {
       return <About />;
     }
-    if (currentPage === 'Blog') {
-      return <Blog />;
+    if (currentPage === 'Portfolio') {
+      return <Portfolio />;
     }
     return <Contact />;
   };
-
-  const handlePageChange = (page) => setCurrentPage(page);
 
   return (
     <div>

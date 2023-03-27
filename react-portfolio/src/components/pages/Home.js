@@ -2,7 +2,7 @@ import React from 'react';
 import '../css/homePage.css';
 import profilePic from '../images/profilePic.jpg'
 
-export default function Home() {
+export default function Home({handlePageChange}) {
   return (
     <header>
         <div class="profilePic">
@@ -16,13 +16,22 @@ export default function Home() {
         </div>
         <ul>
             <li>
-                <a href="#about">About</a>
+                <a href='#about'
+                   onClick={() => handlePageChange('About')}>
+                   About
+                </a>
             </li>
             <li>
-                <a href="#portfolio">Portfolio</a>
+                <a href='#portfolio'
+                   onClick={() => handlePageChange('Portfolio')}>
+                   Portfolio
+                </a>
             </li>
             <li>
-                <a href="#contact">Contact</a>
+                <a href='#Contact'
+                   onClick={() => handlePageChange('Contact')}>
+                   Contact
+                </a>
             </li>
         </ul>
     </header>
