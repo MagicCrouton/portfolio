@@ -1,7 +1,7 @@
 :root {
-    --dark: darkslategrey;
+    --dark: #2f4f4f;
     --secondaryDark: slategrey; 
-    --highlight: orange;
+    --highlight: #DAA520;
     --light: white;
     --normal: black;
     --spaceBetween: 2pt;
@@ -28,6 +28,7 @@ div img {
 
 h1 {
     font-family: 'Roboto Serif', serif;
+    color: var(--light);
     font-weight: 600;
 }
 
@@ -37,6 +38,7 @@ p {
 
 a {
     font-family: 'Roboto Serif', serif;
+    color: var(--light);
 }
 
 /* Header Styling */

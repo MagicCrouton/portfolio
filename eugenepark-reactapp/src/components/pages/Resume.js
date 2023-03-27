@@ -4,12 +4,14 @@ import profilePic from '../images/profilePic.jpg'
 
 export default function () {
   return (
+<div>
+<br></br>
 <div className="container">
       <div className="row justify-content-center">
         <div className="col-md-9">
           <div className="row align-items-center">
             <div className="col-lg-5">
-              <div className="resume-base bg-primary user-dashboard-info-box p-4">
+              <div className="resume-base user-dashboard-info-box p-4">
                 <div className="profile">
                   <div className="jobster-user-info">
                     <div className="profile-avatar">
@@ -160,6 +162,7 @@ export default function () {
         </div>
       </div>
     </div>
+  </div>
   </div>
   );
 }

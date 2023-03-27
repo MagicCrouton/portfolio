@@ -1,4 +1,7 @@
 /* My Resume */
+.resume-base{
+    background-color: #DAA520;
+}
 .profile {
     margin-bottom: 25px;
 }
