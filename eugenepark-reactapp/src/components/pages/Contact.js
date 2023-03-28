@@ -1,22 +1,36 @@
 import React from 'react';
+import '../css/contact.css'
 
 export default function Contact() {
   return (
-    <div>
-      <h1>Contact Page</h1>
-      <p>
-        Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-        molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-        magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-        efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-        mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-        posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-        faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-        ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-        dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-        conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-        rhoncus. Etiam vel condimentum magna, quis tempor nulla.
-      </p>
-    </div>
+
+<section className="get-in-touch col-lg-6">
+   <h1 className="title">Get in touch</h1>
+   <form className="contact-form row">
+      <div className="form-field col-lg-6">
+         <input id="name" className="input-text js-input" type="text" required></input>
+         <label className="label" for="name">Name</label>
+      </div>
+      <div className="form-field col-lg-6 ">
+         <input id="email" className="input-text js-input" type="email" required></input>
+         <label className="label" for="email">E-mail</label>
+      </div>
+      <div className="form-field col-lg-6 ">
+         <input id="company" className="input-text js-input" type="text" required></input>
+         <label className="label" for="company">Company Name</label>
+      </div>
+       <div className="form-field col-lg-6 ">
+         <input id="phone" className="input-text js-input" type="text" required></input>
+         <label className="label" for="phone">Contact Number</label>
+      </div>
+      <div className="form-field col-lg-12">
+         <input id="message" className="input-text js-input" type="text" required></input>
+         <label className="label" for="message">Message</label>
+      </div>
+      <div className="form-field col-lg-12">
+         <input className="submit-btn" type="submit" value="Submit"></input>
+      </div>
+   </form>
+</section>
   );
 }

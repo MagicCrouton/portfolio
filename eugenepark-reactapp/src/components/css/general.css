@@ -46,6 +46,7 @@ div img {
 h1 {
     font-family: 'Roboto Serif', serif;
     font-weight: 600;
+    color: var(--light);
 }
 
 .blurb {
