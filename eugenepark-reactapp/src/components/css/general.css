@@ -1,6 +1,6 @@
 :root {
     --dark: #2f4f4f;
-    --secondaryDark: slategrey; 
+    --secondaryDark: #404040; 
     --highlight: #DAA520;
     --light: white;
     --normal: black;
@@ -17,12 +17,14 @@
     padding-bottom: 200px;
 }
 
-/* footer {
-    position:absolute;
-    left: 0;
-    bottom: 0;
-    right: 0;
-} */
+nav {
+    background-color: var(--secondaryDark);
+}
+
+
+footer {
+    background-color: var(--secondaryDark);
+}
 
 .footerIcon {
     max-width: 100px;
@@ -30,13 +32,11 @@
 }
 
 div img {
-    /* profile picture style */
-    height: 25vh;
-    width: 25vh;
+    height: 30vh;
+    width: 30vh;
     max-width: 300px;
     max-height: 300px;
     border-radius: 100%;
-    padding: 10pt;
 }
 
 .aboutMe {
@@ -45,12 +45,14 @@ div img {
 
 h1 {
     font-family: 'Roboto Serif', serif;
-    color: var(--light);
     font-weight: 600;
 }
 
-p {
+.blurb {
     font-family: 'Roboto Serif', serif;
+    background-color: var(--light);
+    padding: 5%;
+    border-radius: 20pt;
 }
 
 a {

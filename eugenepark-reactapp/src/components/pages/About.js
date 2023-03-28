@@ -12,7 +12,7 @@ export default function About() {
             <img src={profilePic} alt="Profile Picture"></img>
         </div>
       <div className ='col-7'>
-        <p>
+        <p className='blurb'>
         I am a free lance fullstack developer in the MERN stack
 Mongo db/mySQL
 Express

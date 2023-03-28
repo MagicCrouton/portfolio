@@ -2,7 +2,7 @@ import React from 'react';
 
 function Footer({currentPage}) {
     return (
-<footer className={currentPage === 'Home' ? 'collapse' : 'bg-dark text-center text-white fixed-bottom'}>
+<footer className={currentPage === 'Home' ? 'collapse' : 'text-center text-white fixed-bottom'}>
   <div className="container p-4 pb-0">
     <section className="mb-4">
       <a className="btn btn-outline-light btn-floating m-1" href="#!"></a>
