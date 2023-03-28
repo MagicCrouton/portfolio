@@ -10,6 +10,23 @@
 
 .mainBody {
     background-color: var(--dark);
+    height: 100vh;
+}
+
+#root {
+    padding-bottom: 200px;
+}
+
+/* footer {
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+} */
+
+.footerIcon {
+    max-width: 100px;
+    max-height: 100px;
 }
 
 div img {
